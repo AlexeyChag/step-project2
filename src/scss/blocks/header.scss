@@ -1,0 +1,58 @@
+.page-header {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header__logo-text {
+  position: relative;
+  font-family: "Gilroy", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 10px;
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.page-header__logo-text-symbol {
+  font-family: "Gilroy", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.page-header__logo-text-symbol::before {
+  position: absolute;
+  content: "®";
+  font-family: "Gilroy", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: normal;
+  top: -3px;
+  right: -21px;
+}
+
+.page-header__menu {
+  color: $dark;
+  text-align: center;
+  font-family: "Gilroy", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}

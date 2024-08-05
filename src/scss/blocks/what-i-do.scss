@@ -1,0 +1,116 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid $dark;
+  border-bottom: 1px solid $dark;
+  @media (max-width: 1200px) {
+    grid-template-columns: auto;
+  }
+}
+.services__bg {
+  background-color: rgb(190, 190, 190);
+  background-image: url(../images/what-i-do-bgd.jpg);
+  background-size: cover;
+  @media (max-width: 1200px) {
+    height: 991px;
+  }
+  @media (max-width: 768px) {
+    height: 478px;
+  }
+}
+.services__wrapper {
+  padding: 70px 70px 70px 111px;
+  @media (max-width: 1600px) {
+    padding-left: 80px;
+  }
+  @media (max-width: 1200px) {
+    padding: 40px 30px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+.services__items {
+  padding-bottom: 40px;
+  border-bottom: 1px solid $dark;
+  &:last-child {
+    padding-bottom: 0;
+    border: none;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
+}
+
+.services__title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+  font-size: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark;
+  margin-bottom: 100px;
+  @media (max-width: 1900px) {
+    font-size: 120px;
+  }
+  @media (max-width: 1600px) {
+    font-size: 88px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 150px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 900px) {
+    font-size: 120px;
+  }
+  @media (max-width: 768px) {
+    font-size: 80px;
+  }
+  @media (max-width: 450px) {
+    font-size: 54px;
+  }
+}
+.services__name {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 109%;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  &--01::before {
+    content: "01";
+    font-weight: 300;
+    padding-right: 15px;
+  }
+  &--02::before {
+    content: "02";
+    font-weight: 300;
+    padding-right: 15px;
+  }
+  &--03::before {
+    content: "03";
+    font-weight: 300;
+    padding-right: 5px;
+  }
+  &--04::before {
+    content: "04";
+    font-weight: 300;
+    padding-right: 15px;
+  }
+  @media (max-width: 768px) {
+    font-size: 35px;
+    margin-top: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 30px;
+  }
+}
+.services__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: $black;
+}

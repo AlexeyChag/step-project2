@@ -1,0 +1,18 @@
+.company-logo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.company-logo__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.company-logo__nav-image {
+  border-radius: 50px;
+  background-color: $white;
+  padding: 15px 40px;
+}

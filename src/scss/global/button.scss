@@ -1,0 +1,37 @@
+.btn {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 50px;
+  color: $dark;
+  background-color: $white;
+  max-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+
+  &--dark {
+    color: $white;
+    background-color: $dark;
+    gap: 10px;
+  }
+
+  &--small {
+    padding: 15px 30px;
+  }
+
+  &--medium {
+    padding: 15px 60px;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
+  }
+
+  &-arrow__img {
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+}

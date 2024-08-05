@@ -1,0 +1,11 @@
+// * Це головний sass/scss файл проекту
+// * імпортуйте сюди всі інші ваші файли sass/scss
+
+@import "./global/variables";
+@import "./global/reset";
+@import "./global/fonts";
+@import "./global/base";
+
+@import "./global/button";
+
+@import "blocks";

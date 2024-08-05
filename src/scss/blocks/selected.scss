@@ -1,0 +1,104 @@
+.selected {
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  @media (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .btn--dark {
+    margin-top: auto;
+    margin-left: auto;
+
+    @media (max-width: 768px) {
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .btn--medium {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.selected-title {
+  margin-bottom: 50px;
+}
+
+.selected-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 70px;
+  column-gap: 40px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .selected-portfolio:nth-child(1) {
+      order: 3;
+    }
+    .selected-portfolio:nth-child(2) {
+      order: 1;
+    }
+    .selected-portfolio:nth-child(3) {
+      order: 2;
+    }
+    .selected-portfolio:nth-child(4) {
+      order: 4;
+    }
+    .selected-portfolio:nth-child(5) {
+      order: 5;
+    }
+    .selected-portfolio:nth-child(6) {
+      order: 6;
+    }
+  }
+}
+
+.selected-portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-portfolio__image {
+  object-fit: cover;
+  width: 100%;
+  height: 567px;
+}
+
+.selected-portfolio__title {
+  font-family: "Gilroy", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.selected-portfolio__btn {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+}
